@@ -1,6 +1,6 @@
 ---
-layout: default
-title: MainIndex
+title: My page
+permalink: index.html
 ---
 
 <!DOCTYPE html>
@@ -25,12 +25,18 @@ title: MainIndex
     	</div>
 
 		<div class="container">
+			<section class="hero is-medium is-bold is-black">
+					<div class="hero-body weeb-p">
+						<div class="container">
+							<p class="title has-text-grey-dark has-text-centered">DevBlog</p>
+						</div>
+					</div>
+				</section>
 			<div class="notification has-background-light">
 		    	<div class="columns is-centered">
 					<div class="column">
-							<ul class="posts content has-text-justified is-size-6">
+							<ul class="posts has-text-justified is-size-6">
 									{% for post in site.posts %}
-										<script>console.log(post);</script>
 										<li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
 									{% endfor %}
 							</ul>
