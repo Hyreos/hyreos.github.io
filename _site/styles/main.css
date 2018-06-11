@@ -30,3 +30,11 @@ html {
 .dfbg {
     background-color: whitesmoke;
 }
+
+#mp-main-container {
+    background-color: whitesmoke;
+	border-color: black;
+	border-width: 1px;
+    border-style: double;
+    padding: 2em;
+}
