@@ -8,48 +8,61 @@ permalink: index.html
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hyreos (๑˃ᴗ˂)ﻭ</title>
+    <title>Hyreos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
     <link type="text/css" rel="stylesheet" href="styles/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<link rel="icon" href="images/icon.jpeg">
   </head>
-  <body class="has-background-grey-lighter">
-    <div class="container" id="blog">
-    	<div class="columns">
-    		<nav class="breadcrumb has-arrow-separator column" aria-label="breadcrumbs">
-			  <ul>
-			    <li><a href="#" class="is-vcentered">Hyreos</a></li>
-			    <li class="is-active is-vcentered"><a href="#" aria-current="page" class="">DevBlog</a></li>
-			  </ul>
-			</nav>
-    	</div>
+  <body>
+	  <div class="hero is-medium is-danger" id="header">
+		  <div class="hero-body">
+			  <div class="container">
+				  <h1 class="title is-centered has-text-darker">
+					DevBlog
+				  </h1>
+			  </div>
+		  </div>
+	  </div>
 
-		<div class="container">
-			<section class="hero is-medium is-bold is-black">
-					<div class="hero-body weeb-p">
-						<div class="container">
-							<p class="title has-text-grey-dark has-text-centered">DevBlog</p>
+		<div class="section">
+			<div class="container" id="main-container">
+				<div class="content">
+					<div class="columns is-multiline">
+						<div style="margin: 30px">
+							{% for post in site.posts %}
+							<div class="column">
+								<article class="media">
+									<figure class="media-left">
+										<p class="image is-64x64">
+											<img src="https://avatars2.githubusercontent.com/u/21271840?s=460&v=4"></img>
+										</p>
+									</figure>
+		
+									<div class="media-content">
+										<div class="content">
+											<p>
+												<small> {{ post.date | date_to_string }} </small>
+												<br>
+												<strong><a href="{{ post.url }}" class="h1">{{ post.title }}</a></strong>
+											</p>
+										</div>
+									</div>
+								</article>
+							</div>
+							{% endfor %}	
 						</div>
 					</div>
-				</section>
-			<div class="notification has-background-light">
-		    	<div class="columns is-centered">
-					<div class="column">
-							<ul class="posts has-text-justified is-size-6">
-									{% for post in site.posts %}
-										<li><span>{{ post.date | date_to_string }}</span> <a href="{{ post.url }}">{{ post.title }}</a></li>
-									{% endfor %}
-							</ul>
-					</div>
 				</div>
-		  	</div>
+			</div>
 		</div>
-    </div>
-    <div></div>
-    <footer class="footer has-background-grey-lighter">
-    	<div class="container">
-    		<p class="has-text-grey-dark">@Hyreos2018</p>
-    	</div>
-    </footer>
+		<footer class="footer dfbg">
+			<div class="container">
+				<small class="has-text-grey">
+					Copyright © 2018 Hyreos
+				</small>
+			</div>
+		</footer>
+
   </body>
 </html>
