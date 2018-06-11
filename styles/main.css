@@ -2,7 +2,8 @@
 	background-color: whitesmoke;
 	border-color: black;
 	border-width: 1px;
-	border-style: double;
+    border-style: double;
+    padding: 2em;
 }
 
 body {

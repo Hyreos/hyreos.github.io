@@ -3,46 +3,39 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hyreos (๑˃ᴗ˂)ﻭ</title>
+    <title>Hyreos</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/main.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link type="text/css" rel="stylesheet" href="../../../styles/main.css">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+	<link rel="icon" href="../images/icon.jpeg">
   </head>
-  <body class="has-background-grey-lighter">
-    <div class="container" id="blog">
-    	<div class="columns">
-    		<nav class="breadcrumb has-arrow-separator column" aria-label="breadcrumbs">
-			  <ul>
-			    <li><a href="#" class="is-vcentered">Hyreos</a></li>
-			    <li class="is-active is-vcentered"><a href="#" aria-current="page" class="">DevBlog</a></li>
-			  </ul>
-			</nav>
-    	</div>
+  <body>
+	  <div class="hero is-little is-danger" id="header">
+		  <div class="hero-body">
+			  <div class="container">
+				  <h1 class="title is-centered has-text-darker">
+					{{ page.title }}
+				  </h1>
+			  </div>
+		  </div>
+	  </div>
 
-		<div class="container">
-			<section class="hero is-medium is-bold is-black">
-				<div class="hero-body weeb-p">
-					<div class="container">
-						<p class="title has-text-grey-dark has-text-centered">DevBlog</p>
-					</div>
-				</div>
-			</section>
-			<div class="notification has-background-light">
-		    	<div class="columns is-centered">
-					<div class="column">
-						<div class="content has-text-justified is-size-6">
-							{{ content }}
-						</div>
-					</div>
-				</div>
-		  	</div>
+		<div class="section">
+			<div class="container" id="main-container">
+        <div class="columns">
+          <div class="content post-content column is-size-6-mobile has-text-justified">
+              {{ content }}
+          </div>
+        </div>
+			</div>
 		</div>
-    </div>
-    <div></div>
-    <footer class="footer has-background-grey-lighter">
-    	<div class="container">
-    		<p class="has-text-grey-dark">Copyright © 2018~2018 Hyreos</p>
-    	</div>
-    </footer>
+		<footer class="footer dfbg">
+			<div class="container">
+				<small class="has-text-grey">
+					Copyright © 2018 Hyreos
+				</small>
+			</div>
+		</footer>
+
   </body>
 </html>
