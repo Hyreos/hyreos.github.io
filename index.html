@@ -15,36 +15,40 @@ permalink: index.html
 	<link rel="icon" href="images/icon.jpeg">
   </head>
   <body>
-	  <div class="hero is-medium is-danger" id="header">
-		  <div class="hero-body">
-			  <div class="container">
-				  <h1 class="title is-centered has-text-darker">
-					DevBlog
-				  </h1>
-			  </div>
-		  </div>
-	  </div>
-
 		<div class="section">
-			<div class="container" id="mp-main-container">
-				<div class="content">
+			<div class="container">
+				<div class="hero is-danger" id="header">
+					<div class="hero-body">
+						<div class="container">
+							<h1 class="title has-text-centered">
+							DevBlog
+							</h1>
+							<h1 class="subtitle has-text-centered">
+								Lair of bugs
+							</h1>
+						</div>
+					</div>
+				</div>
+
+				<div class="content" id="mp-main-container">
 					<div class="columns is-multiline">
-						<div style="margin: 30px">
+						<div>
+							<strong class="title is-4">Posts</strong>
 							{% for post in site.posts %}
 							<div class="column">
 								<article class="media">
-									<figure class="media-left">
+									<!--<figure class="media-left">
 										<p class="image is-64x64">
 											<img src="https://avatars2.githubusercontent.com/u/21271840?s=460&v=4"></img>
 										</p>
-									</figure>
+									</figure>-->
 		
 									<div class="media-content">
 										<div class="content is-size-6">
 											<p>
-												<small> {{ post.date | date_to_string }} </small>
-												<br>
+												<small>&#8627;</small>
 												<strong><a href="{{ post.url }}" class="h1">{{ post.title }}</a></strong>
+												<small> {{ post.date | date_to_string }} </small>
 											</p>
 										</div>
 									</div>

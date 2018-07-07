@@ -1,17 +1,17 @@
 #main-container {
 	background-color: whitesmoke;
-	border-color: #E30013;
+	border-color: #1F2027;
 	border-width: 1px;
     border-style: double;
     padding: 2em;
 }
 
 body {
-	background-color: whitesmoke;
+	background-color: #1F2027;
 }
 
 html {
-	background-color: whitesmoke;
+	background-color: #1F2027;
 }
 
 .posts {
@@ -26,28 +26,28 @@ img {
 
 
 #header {
-	background-image: url("https://cdn.discordapp.com/attachments/364181635903520768/455874504699150346/63669788_p1_master1200.png");
-	background-position: center;
+	background-image: url("https://i.imgur.com/20XWR09.png");
+	background-position: left;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-color: #E30013;
+    background-color: #1F2027;
 }
 
 #header:hover {
-    background-image: url("https://media.discordapp.net/attachments/364181635903520768/455874375661518858/63669788_p2_master1200.png?width=1056&height=660");
+    background-image: url("https://i.imgur.com/20XWR09.png");
 }
 
 a {
-    color: #E30013;
+    color: #1F2027;
 }
 
 .dfbg {
-    background-color: whitesmoke;
+    background-color: #1F2027;
 }
 
 #mp-main-container {
     background-color: whitesmoke;
-	border-color: #E30013;
+	border-color: #1F2027;
 	border-width: 1px;
     border-style: double;
     padding: 2em;
