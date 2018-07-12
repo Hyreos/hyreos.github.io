@@ -1,17 +1,17 @@
 #main-container {
 	background-color: whitesmoke;
-	border-color: #1F2027;
+	border-color: whitesmoke;
 	border-width: 1px;
     border-style: double;
     padding: 2em;
 }
 
 body {
-	background-color: #1F2027;
+    background-color: whitesmoke;
 }
 
 html {
-	background-color: #1F2027;
+	background-color: whitesmoke;
 }
 
 .posts {
@@ -26,28 +26,23 @@ img {
 
 
 #header {
-	background-image: url("https://i.imgur.com/20XWR09.png");
 	background-position: left;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-color: #1F2027;
-}
-
-#header:hover {
-    background-image: url("https://i.imgur.com/20XWR09.png");
+    background-color: whitesmoke;
 }
 
 a {
-    color: #1F2027;
+    color: rgb(204, 26, 26);
 }
 
 .dfbg {
-    background-color: #1F2027;
+    background-color: whitesmoke;
 }
 
 #mp-main-container {
     background-color: whitesmoke;
-	border-color: #1F2027;
+	border-color: whitesmoke;
 	border-width: 1px;
     border-style: double;
     padding: 2em;
