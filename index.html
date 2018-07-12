@@ -15,8 +15,15 @@ permalink: index.html
 	<link rel="icon" href="https://i.imgur.com/20XWR09.png">
   </head>
   <body>
+	<nav id="main-nav" class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-menu">
+				<a class="navbar-item navitem" href="http://www.hyreos.moe">
+					Homepage
+				</a>
+			</div>
+			</nav>
 	<div class="container">
-		<small class="is-size-2 has-text-centered has-text-gray">
+		<small id="main-header-home" class="is-size-4 has-text-centered has-text-white">
 			What I'm doing?
 		</small>
 		<div class="content" id="mp-main-container">
@@ -28,9 +35,15 @@ permalink: index.html
 							<div class="media-content">
 								<div class="content is-size-6">
 									<p>
-										<small>&#8627;</small>
-										<strong><a href="{{ post.url }}" class="h1">{{ post.title }}</a></strong>
-										<small> {{ post.date | date_to_string }} </small>
+										<strong>
+											<a href="{{ post.url }}" class="h1">
+												{{ post.title }}
+											</a>
+										</strong>
+
+										<small> 
+											{{ post.date | date_to_string }} 
+										</small>
 									</p>
 								</div>
 							</div>

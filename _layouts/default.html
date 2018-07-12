@@ -10,26 +10,24 @@
 	<link rel="icon" href="https://i.imgur.com/20XWR09.png">
   </head>
   <body>
-		<div class="section">
-			<div class="container" id="main-container">
-        <div class="columns">
-					<div class="content">
-							<strong class="title is-5 is-centered has-text-centered">{{ page.title }}</strong>
-							<div class="content post-content column is-size-6-mobile has-text-justified">
-									{{ content }}
-							</div>
-					</div>
-				</div>
-				<a href="http://hyreos.moe"><< Homepage</a>
+	<nav id="main-nav" class="navbar" role="navigation" aria-label="main navigation">
+			<div class="navbar-menu">
+				<a class="navbar-item navitem" href="http://www.hyreos.moe">
+					Homepage
+				</a>
+			</div>
+			</nav>
+	<div class="container">
+		<small id="main-header-home" class="is-size-4 has-text-centered has-text-white">
+			{{ page.title }}
+		</small>
+		<div class="content" id="mp-main-container">
+			<small>
+					{{ page.date | date_to_string }} 
+			</small>
+			<div class="content post-content column is-size-6-mobile has-text-justified">
+					{{ content }}
 			</div>
 		</div>
-		<footer class="footer dfbg">
-			<div class="container">
-				<small class="has-text-grey">
-					Copyright © 2018 Hyreos
-				</small>
-			</div>
-		</footer>
-
-  </body>
+	</div>
 </html>

@@ -1,35 +1,33 @@
 #main-container {
-	background-color: whitesmoke;
-	border-color: whitesmoke;
+	background-color: white;
+	border-color: white;
 	border-width: 1px;
     border-style: double;
     padding: 2em;
 }
 
-body {
-    background-color: whitesmoke;
+#main-nav {
+    background-color: red;
 }
 
 html {
-	background-color: whitesmoke;
+	background-color: black;
 }
-
-.posts {
-	margin-top: 50px;
-}
-
 
 img {
     max-width: 600px;
     max-height: 600px;
 }
 
+#main-header-home {
+    background-color: red;
+}
 
 #header {
 	background-position: left;
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 a {
@@ -37,13 +35,15 @@ a {
 }
 
 .dfbg {
-    background-color: whitesmoke;
+    background-color: white;
 }
 
 #mp-main-container {
-    background-color: whitesmoke;
-	border-color: whitesmoke;
-	border-width: 1px;
-    border-style: double;
+    background-color: white;
+
     padding: 2em;
+}
+
+.navitem {
+    color:white;
 }
