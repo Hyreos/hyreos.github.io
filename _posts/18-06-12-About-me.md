@@ -6,5 +6,5 @@ I'm making bugs and reinventing the wheel.
 
 [My Github link](https://github.com/Hyreos)
 
-{:.img}
+{:.image}
 ![](../../../images/0.jpg)
