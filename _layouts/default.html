@@ -1,39 +1,49 @@
+---
+title: My page
+permalink: index.html
+---
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Hyreos</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link type="text/css" rel="stylesheet" href="../../../styles/main.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-	<link rel="icon" href="https://i.imgur.com/20XWR09.png">
+		<meta charset="utf-8">
+	<title>
+		{{ page.title }}
+	</title>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="../../../themes/slate.min.css">
   </head>
   <body>
-		<nav id="navMenu" class="navbar" role="navigation" aria-label="main navigation">
-			<div class="container">
-				<div class="navbar-brand">
-				<a class="navbar-item" href="http://hyreos.moe"><i class="fas fa-home fa-lg redEl"></i></a>
-				<a class="navbar-item is-hidden-desktop" href="https://github.com/Hyreos"><i class="fab fa-github fa-lg redEl"></i></a>
-				</div>
-				<div id="navbar-menu-id" class="navbar-menu">
-				<div class="navbar-end">
-					<a class="navbar-item is-hidden-touch" href="https://github.com/Hyreos"><i class="fab fa-github fa-lg redEl"></i></a>
-				</div>
-				</div>
-			</div>
-		</nav>
+
 	<div class="container">
-		<small id="main-header-home" class="is-size-4 has-text-centered has-text-white">
-			{{ page.title }}
-		</small>
-		<div class="content" id="mp-main-container">
-			<small>
-					{{ page.date | date_to_string }} 
-			</small>
-			<div class="content post-content column is-size-6-mobile has-text-justified">
-					{{ content }}
+		<nav class="navbar">
+			<a class="navbar-brand" href="http://hyreos.moe">Hyreos</a>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="row">			
+			<div class="col-12">
+					<br>
+					<span class="h4">
+						{{ page.title }}
+					</span>
+					<br>
+					<small>
+						{{ page.date | date_to_string }} 
+					</small>
+					<br>				
+					<br>
+				<div class="content" id="mp-main-container">
+					<div class="content post-content column is-size-6-mobile has-text-justified">
+						{{ content }}
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
+
+  </body>
 </html>

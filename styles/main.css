@@ -11,23 +11,23 @@
 }
 
 html {
-	background-color: rgb(230, 230, 230);
+	background-image: url("https://i.imgur.com/4uG9QSV.jpg")
 }
 
 #anime-girl {
     background-image: url("https://i.imgur.com/3QCxLmA.png");
     background-size: auto 100%;
     background-repeat: no-repeat;
-    background-color: #CCFF00;
     background-position: right;
 }
+
 
 .weeb {
     max-width: 250px;
 }
 
 .redEl {
-    color: red;
+    color: white;
 }
 
 img {
@@ -36,7 +36,7 @@ img {
 }
 
 #main-header-home {
-    background-color: red;
+    background-color: rgb(245, 17, 93);
 }
 
 #header {
@@ -58,12 +58,16 @@ a {
     
 }
 
+#navMenu {
+    background-color: rgba(0, 0, 0, 0)
+}
+
 #mp-main-container {
     min-height: 70vh;
 }
 
 #mp-main-container {
-    background-color: white;
+    background-color: rgba(15, 15, 30, 255);
     padding: 2em;
 }
 

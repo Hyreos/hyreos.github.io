@@ -2,72 +2,52 @@
 title: My page
 permalink: index.html
 ---
-
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-	<meta name="theme-color" content="#CCFF00"/>
-    <title>Hyreos</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <link type="text/css" rel="stylesheet" href="styles/main.css">
-	<script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
-	<link rel="icon" href="https://avatars2.githubusercontent.com/u/21271840?s=460&v=4">
+			<meta charset="utf-8">
+		<title>
+			Hyreos
+		</title>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="themes/slate.min.css">
   </head>
   <body>
-	<nav id="navMenu" class="navbar" role="navigation" aria-label="main navigation">
-		<div class="container">
-			<div class="navbar-brand">
-			<a class="navbar-item" href="http://hyreos.moe"><i class="fas fa-home fa-lg redEl"></i></a>
-			<a class="navbar-item is-hidden-desktop" href="https://github.com/Hyreos"><i class="fab fa-github fa-lg redEl"></i></a>
-			</div>
-			<div id="navbar-menu-id" class="navbar-menu">
-			<div class="navbar-end">
-				<a class="navbar-item is-hidden-touch" href="https://github.com/Hyreos"><i class="fab fa-github fa-lg redEl"></i></a>
-			</div>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-		<section class="hero" id="anime-girl">
-			<div class="hero-body">
-				<div class="container">
-					<h1 class="title">
-						<small id="main-header-home" class="is-size-4 has-text-centered has-text-white">
-							I like cupcakes
-						</small>
-					</h1>
-				</div>
-			</div>
-		</section>
-		
-		<div class="content" id="mp-main-container">
-			<div class="columns is-multiline">
-				<div>
-					{% for post in site.posts %}
-					<div class="column">
-						<article class="media">		
-							<div class="media-content">
-								<div class="content is-size-6">
-									<p>
-										<strong>
-											<a href="{{ post.url }}" class="h1">
-												{{ post.title }}
-											</a>
-										</strong>
 
-										<small> 
-											{{ post.date | date_to_string }} 
-										</small>
-									</p>
-								</div>
-							</div>
-						</article>
+	<div class="container">
+		<nav class="navbar">
+			<a class="navbar-brand" href="http://hyreos.moe">Hyreos</a>
+		</nav>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12">
+					<div class="hero-unit">
+						<img src="https://coverfiles.alphacoders.com/370/37013.png" style="width: 100%"></img>
 					</div>
-					{% endfor %}	
-				</div>
 			</div>
+			
+			{% for post in site.posts %}
+			<div class="col-12">
+					<p>
+						<strong>
+							<a href="{{ post.url }}" class="h5">
+								{{ post.title }}
+							</a>
+						</strong>
+
+						<small> 
+							{{ post.date | date_to_string }} 
+						</small>
+				</p>
+			</div>
+			{% endfor %} 
 		</div>
 	</div>
+
+  </body>
 </html>
