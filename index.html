@@ -14,6 +14,7 @@ permalink: index.html
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="themes/slate.min.css">
+		<link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
 
@@ -24,29 +25,29 @@ permalink: index.html
 	</div>
 
 	<div class="container">
-		<div class="row">
-			<div class="col-12">
-					<div class="hero-unit">
-						<img src="https://coverfiles.alphacoders.com/370/37013.png" style="width: 100%"></img>
+			<div class="hero-unit">
+					<img src="https://coverfiles.alphacoders.com/370/37013.png" style="width: 100%"></img>
+				</div>
+		<div class="row content">
+					{% for post in site.posts %}
+					<div class="col-12">
+							<span class="align-middle">
+								<strong>
+									<a href="{{ post.url }}" class="h5">
+										{{ post.title }}
+									</a>
+								</strong>
+								<small> 
+									{{ post.date | date_to_string }} 
+								</small>
+							</span>
+								<br>
+								<small class="mb-0">
+									{{ post.description }}
+								</small>
 					</div>
+					{% endfor %} 
 			</div>
-			
-			{% for post in site.posts %}
-			<div class="col-12">
-					<p>
-						<strong>
-							<a href="{{ post.url }}" class="h5">
-								{{ post.title }}
-							</a>
-						</strong>
-
-						<small> 
-							{{ post.date | date_to_string }} 
-						</small>
-				</p>
-			</div>
-			{% endfor %} 
-		</div>
 	</div>
 
   </body>

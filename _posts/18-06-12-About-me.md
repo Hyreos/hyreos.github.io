@@ -1,5 +1,6 @@
 ---
 layout: default
+description: Hello.
 ---
 
 I'm making bugs and reinventing the wheel.

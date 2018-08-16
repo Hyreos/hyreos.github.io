@@ -1,76 +1,10 @@
-#main-container {
-	background-color: white;
-	border-color: white;
-	border-width: 1px;
-    border-style: double;
-    padding: 2em;
+.content {
+    padding: 10px;
+    padding-top: 30px;
 }
 
-#main-nav {
-    background-color: red;
-}
-
-html {
-	background-image: url("https://i.imgur.com/4uG9QSV.jpg")
-}
-
-#anime-girl {
-    background-image: url("https://i.imgur.com/3QCxLmA.png");
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-}
-
-
-.weeb {
-    max-width: 250px;
-}
-
-.redEl {
-    color: white;
-}
-
-img {
-    max-width: 600px;
-    max-height: 600px;
-}
-
-#main-header-home {
-    background-color: rgb(245, 17, 93);
-}
-
-#header {
-	background-position: left;
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    background-color: white;
-}
-
-a {
-    color: rgb(204, 26, 26);
-}
-
-.dfbg {
-    background-color: white;
-}
-
-@media only screen and (min-width: 1025px){
-    
-}
-
-#navMenu {
-    background-color: rgba(0, 0, 0, 0)
-}
-
-#mp-main-container {
-    min-height: 70vh;
-}
-
-#mp-main-container {
-    background-color: rgba(15, 15, 30, 255);
-    padding: 2em;
-}
-
-.navitem {
-    color:white;
+.post-description {
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
