@@ -9,6 +9,13 @@ permalink: index.html
   <head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- Chrome, Firefox OS and Opera -->
+		<meta name="theme-color" content="#ee3b0a">
+		<!-- Windows Phone -->
+		<meta name="msapplication-navbutton-color" content="#ee3b0a">
+		<!-- iOS Safari -->
+		<meta name="apple-mobile-web-app-status-bar-style" content="#ee3b0a">
+
 		<title>
 			{{ page.title }}
 		</title>
@@ -28,22 +35,21 @@ permalink: index.html
 	</div>
 
 	<div class="container" style="padding:0px">
-				<div class="row content" style="padding-top:0px">
-					<div class="col-sm-12" style="margin-bottom:10px">
-							<div class="card">
-								<div class="card-header">
-								  {{ page.date | date_to_string }}
-								</div>
-								<div class="card-body">
-								  <p class="card-title h5">{{ title }}</p>
-								  <p class="card-text"> 
-									{{ content }} 
-									</p>
-								</div>
-							  </div>
-						</div>
-					
+		<div class="row content" style="padding-top:0px">
+			<div class="col-sm-12" style="margin-bottom:10px">
+				<div class="card">
+					<div class="card-header">
+						{{ page.date | date_to_string }}
+					</div>
+					<div class="card-body">
+						<p class="card-title h5">{{ title }}</p>
+						<p class="card-text"> 
+						{{ content }} 
+						</p>
+					</div>
+					</div>
 			</div>
+		</div>
 	</div>
 
   </body>
