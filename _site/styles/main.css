@@ -8,3 +8,9 @@
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+
+.image {
+    max-width: 100%;
+    max-height: auto;
+}
