@@ -9,7 +9,7 @@ permalink: index.html
   <head>
 		<meta charset="utf-8">
 		<title>
-			page.title
+			{{ page.title }}
 		</title>
 
 		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -36,7 +36,6 @@ permalink: index.html
 								<div class="card-body">
 								  <p class="card-title h5">{{ title }}</p>
 								  <p class="card-text"> 
-									<p  class="h2"><strong> {{ page.title }}</strong></p>
 									{{ content }} 
 									</p>
 								</div>

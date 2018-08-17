@@ -1,7 +1,9 @@
 ---
 layout: default
-description: Hello.
+description: Hello!
 ---
+
+# About me
 
 I'm making bugs and reinventing the wheel.
 
