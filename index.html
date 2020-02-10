@@ -34,14 +34,14 @@ permalink: index.html
 
 	<div class="container" style="padding:0px">
 		<div class="row content" style="padding-top:0px">
-			<div class="hero-unit offset-md-4 col-md-4">
-				<img src="images/shimakaze_chibi.png" style="min-height: 15vh; max-height: 15vh;"></img>
+			<div class="hero-unit col-md-12">
+				<img src="images/shimakaze_chibi.png" style="min-height: 30vh; max-height: 30vh; display:block; margin-left:auto; margin-right:auto;"></img>
 			</div>
 		</div>
 		
 		<div class="row content">
 			{% for post in site.posts %}
-			<div class="col-sm-12" style="margin-bottom:10px">
+			<div class="col-sm-12">
 				<div class="card">
 					<div class="card-header">
 						{{ post.date | date_to_string }}
